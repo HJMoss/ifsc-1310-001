@@ -1,16 +1,18 @@
-/* --- Style for css-demo --- */
+/* ------ Style for css-demo ----- */
 
+/*  ---------------Box Sizing-----------------  */
 
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  body{
-  font-family: 'Gabarito', cursive;
-  }
-  
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*  --------------- Global Styles -----------------  */
+
+body{
+font-family: 'Gabarito', sans-serif;
+}
