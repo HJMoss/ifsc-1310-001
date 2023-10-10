@@ -1,5 +1,7 @@
 /* ------ Style for css-demo ----- */
 
+
+
 /*  ---------------Box Sizing-----------------  */
 
 html {
@@ -15,6 +17,7 @@ html {
 
 img{
   max-width:100%;
+  height:auto;
 }
 
 /*  ---------------Utility Classes-----------------  */
@@ -28,7 +31,7 @@ img{
 
 body{
 font-family: 'Gabarito', sans-serif;
-margin:0;
+margin:0;  
 }
 
 header.primary{
@@ -49,7 +52,7 @@ padding: 20px 40px;
 
 header.primary h1 {
   font-size:2.2rem;
-  margin:20px 0 10px;
+  margin:20px 0 0;
   text-shadow: 2px 2px #000000;
 }
 
@@ -65,9 +68,9 @@ header.primary h2{
 }
 
 header.primary nav{
-    text-shadow: 1px 1px 8px #000000;
-  max-width:900px;
-  margin:20px auto;
+ text-shadow: 1px 1spx 8px #000000;
+ max-width:900px;
+ margin:20px auto; 
 }
 
 header.primary nav ul{
@@ -81,20 +84,20 @@ header.primary nav ul li{
   list-style-type:none;
 }
 
-header.primary nav ul li a{
-  color:#fff900;
+header.primary nav ul li a {
+  color:#ffffff;
   text-decoration:none;
   background-color:#000000;
   background-color:rgba(0,0,0,.5);
   padding:5px 10px;
   border:4px solid #fff900;
-  border-radius:30px 10px;
+  border-radius:25px 10px;
   opacity:1;
   transition:.5s;
 }
 
 header.primary nav ul li a:hover{
-   background-color:rgba(0,0,0,1);
+  background-color:rgba(0,0,0,.8);
 }
 
 #intro{
@@ -121,14 +124,15 @@ header.primary nav ul li a:hover{
 }
 
 #content article.post:hover {
-  box-shadow: 0 8px 16px rgba(0,0,0,0.6)
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
-#article.post figure{
+article.post figure{
   margin:0;
 }
 
-article.post time.post-date, article.post figcaption, article.post .post-meta
+article.post time.post-date, article.post figcaption,
+article.post .post-meta
 {
   text-transform:uppercase;
   color:#c0c0c0;
@@ -141,7 +145,6 @@ article.post a{
 article.post a:hover{
   text-decoration:none;
 }
-
 article.post img{
   border:2px solid #fff900;
   padding:1px;
@@ -162,9 +165,23 @@ aside .container{
 }
 
 
+  
 
 
-/* -------------------------- Media Queries -------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  --------------- Media Queries -----------------  */
 
 @media screen and (max-width:600px){
   header.primary nav ul{
@@ -176,7 +193,6 @@ aside .container{
   header.primary nav ul a{
     display:block;
   }
-  
 }
 
 
