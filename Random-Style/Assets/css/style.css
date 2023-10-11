@@ -1,0 +1,118 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  .container{
+    max-width:80vw;
+    margin:40px auto;
+  }
+  
+  body{
+  font-family: 'Gabarito', sans-serif;
+  margin:0;  
+  }
+  
+  header.primary{
+    background-color:#00ffda;
+    color:#ffffff;
+    border-bottom:4px solid #785340;
+    text-align:center;
+    padding:20px;
+    transition:.3s;
+  }
+  
+  header.primary:hover{
+    background-color:#785340;
+    color:#ffffff;
+    border-bottom:4px solid #00ffda;
+  }
+  
+  header.primary h1{
+    text-shadow: 2px 2px #785340;
+    margin:20px 0 0;
+    font-size:2.2rem;
+    transition:.3s;
+    padding:10px;
+  }
+  
+  header.primary h1:hover{
+    font-size:2.8rem;
+    padding:20px;
+    text-decoration:4px underline #00ffda;
+  }
+  
+  header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:30px;
+  }
+  
+  header.primary nav ul li{
+    list-style-type:none;
+  }
+  
+  header.primary nav ul li a{
+    color:#ffffff;
+    text-decoration:none;
+    background-color:#000000;
+    background-color:rgba(0,0,0,.5);
+    padding:5px 10px;
+    border:4px solid #785340;
+    border-radius:10px 10px 10px 10px;
+    opacity:1;
+    transition:.3s;
+  }
+  
+  header.primary nav ul li a:hover{
+    border:4px solid #00ffda;
+    background-color:rgba(0,0,0,.5);
+    text-shadow: 1px 1px #785340;
+    border-radius:30px 30px 30px 30px;
+  }
+  
+  h3.thoughts{
+    padding:20px;
+  }
+  
+  footer.footer{
+    background-color:#00ffda;
+    color:#785340;
+    padding-top:40px;
+    padding-bottom:20px;
+    border-top:4px solid #785340;
+    transition:.8s;
+  }
+  
+  footer.footer:hover{
+    background-color:#785340;
+    color:#00ffda;
+    padding-top:15px;
+    padding-bottom:45px;
+    border-top:4px solid #00ffda;
+  }
+  
+  footer.footer h6{
+    text-align:center;
+  }
+  
+  /* --MQ--*/
+  
+  @media screen and (max-width:600px){
+    header.primary nav ul{
+      flex-direction:column;
+      max-width:250px;
+      margin:auto;
+      gap:10px;
+    }
+    header.primary nav ul a{
+      display:block;
+    }
+  }
+  
+  
