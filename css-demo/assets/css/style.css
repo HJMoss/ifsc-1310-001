@@ -272,7 +272,7 @@ dd{
 #practice blockquote cite{
   display:block;
   text-align:right;
-  front-size:.8rem;
+  font-size:.8rem;
   margin-top:10px;
 }
 
